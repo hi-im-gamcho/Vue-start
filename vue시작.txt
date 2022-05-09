@@ -1,0 +1,27 @@
+1. vue 설치
+    - cmd npm install -g @vue/cli
+
+
+2. vue 폴더 생성
+    - vue create 폴더명
+    - cd vue-practice : 생성한 폴더로 이동.
+    - code . : vscode에서 열기.
+    - npm run serve : 미리보기 실행(브라우저에 실행)
+
+
+3. app.vue : 코드 짜는 곳. 
+    - <template> : html 파일 짜는 곳.
+    - <script> : JS 짜는 곳.
+    - <style> : css 짜는 곳.
+
+
+4. 내용물 설명
+    - node_modules : 프로젝트에 쓰는 라이브러리들.
+    - src폴더 : 소스코드 담는 곳
+    - public : html + 기타 파일 보관.
+    - package.json : 라이브러리 버전, 프로젝트 설정 기록.
+
+
+5. 매커니즘
+    - app.vue -> compile -> index.html -> browser
+    - 
