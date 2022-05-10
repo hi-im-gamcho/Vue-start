@@ -15,14 +15,17 @@
   <div>
     <h4>{{products[0]}}</h4>
     <p>50</p>
+    <button @click="신고수[0] += 1">허위매물신고</button> <span>신고 수 : {{ 신고수[0] }}</span>
   </div>
   <div>
     <h4>{{products[1]}}</h4>
     <p>60</p>
+    <button @click="신고수[1]++">허위매물신고</button> <span>신고 수 : {{ 신고수[1]}} </span>
   </div>
   <div>
     <h4>{{products[2]}}</h4>
     <p>70</p>
+    <button @click="신고수[2]++">허위매물신고</button> <span>신고 수 : {{ 신고수[2]}} </span>
   </div>
   
 
@@ -38,9 +41,16 @@ export default {
       스타일 : 'color : red',
       products : ['역삼동원룸', '대치동원룸', '한남동원룸'],
       메뉴들 : ['Home', 'Shop', 'About'],
-      룸들 : ['역삼동원룸', '대치동원름', '한남동원룸']
+      신고수 : [0, 0, 0],
     }
   },
+  methods: {
+    increase() {
+      this.신고수[0] += 1;
+    }
+
+  },
+
   components: {
   }
 }
